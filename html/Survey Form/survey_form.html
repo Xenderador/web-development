@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Fill out this Survey Form.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Enter the name:<input id="name" type="text" placeholder="John Dee"
+                        required /></label>
+                <label for="email" id="email-label">Enter your email:<input id="email" type="email"
+                        placeholder="johndee@gmail.com" required /></label>
+                <label for="number" id="number-label">Enter the number:<input id="number" type="number" min="0" max="9"
+                        placeholder="7647828927" required /></label>
+                <label>how did you hear about us?
+                    <select id="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="1">Google</option>
+                        <option value="2">Meta</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label><input type="radio" value="0" name="group1" id="definatily">Definitely</label>
+                </div>
+
+                <div>
+                    <label> <input id="maybe" type="radio" value="0" name="group1">Maybe <label>
+                </div>
+
+                <div>
+                    <label><input id="notsure" type="radio" value="0" name="group1">Not Sure</label>
+            </fieldset>
+            <fieldset>
+                <label for="add-variety">Tick the given:</label>
+                <label for="v1"><input id="cricket" type="checkbox" value="cricket" />Cricket</label>
+                <label for="v2"><input id="swimming" type="checkbox" value="swimming" />Swimming</label>
+                </label>
+                <label>
+                    <legend>Comments and reviews</legend>
+                    <textarea id="comments" name="com" rows="3" cols="30" placeholder="Any suggestions?"></textarea>
+                </label>
+            </fieldset>
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+
+</html>
