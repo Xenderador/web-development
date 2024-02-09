@@ -1,0 +1,16 @@
+.special{
+    color:orange;
+    font-weight: bold;
+}
+h1{
+    color: blueviolet;
+}
+p{
+    font-weight:lighter;
+}
+h1 + p{
+    font-size: 200%;
+}
+a:visited{
+    color:aqua;
+}
