@@ -1,0 +1,48 @@
+body {
+    font-family: ariel, sans-sarif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+main {
+    padding: 2px;
+    margin: 0 auto;
+}
+
+#title {
+    text-align: center;
+    padding: auto;
+    color: black;
+}
+
+#img-div {
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#img-caption {
+    font-style: italic;
+    color: #666;
+}
+
+#tribute-info {
+    text-align: justify;
+    margin-top: 2px;
+}
+
+#tribute-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
