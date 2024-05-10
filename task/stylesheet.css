@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+.left {
+  flex: 2;
+  padding: 20px;
+}
+.header b {
+  font-family: Arial;
+  font-size: 40px;
+}
+.header p {
+  font-style: italic;
+  font-size: 15px;
+  color: #6c757d;
+}
+.carousel-item img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.frame-animation .carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-animation .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(85, 8, 121, 0.5)
+  );
+  z-index: 1;
+  animation: frame-animation 1s ease infinite;
+}
+
+@keyframes frame-animation {
+  0% {
+    background-position: 0% 0%;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(83, 30, 107, 0.5)
+    );
+  }
+  50% {
+    background-position: 100% 0%;
+    background-image: linear-gradient(
+      to left,
+      transparent,
+      rgba(50, 58, 101, 0.5)
+    );
+  }
+  100% {
+    background-position: 0% 0%;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(21, 68, 79, 0.5)
+    );
+  }
+}
+.caption {
+  text-align: justify;
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+.right {
+  flex: 2;
+  padding: 20px;
+}
+.outer-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+.outer-box:focus {
+  outline: none;
+}
+.outer-box h4 {
+  border-bottom: 1px solid #ccc;
+}
+.enterterm {
+  width: 220px;
+  border: none;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: calc(100% - 70px);
+  margin-right: 10px;
+}
+.go {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+.go:hover {
+  background-color: #0056b3;
+}
+.row {
+  display: flex;
+  border: 1px solid #ccc; /* Border around the row */
+  margin-bottom: 10px;
+}
+.column {
+  flex: 1;
+  padding: 5px;
+  border-right: 1px solid #ccc; /* Border between columns */
+}
+.right,
+.outer-box,
+.enterterm,
+.go {
+  margin: 0 auto;
+}
+.go {
+  padding: 0 auto;
+  width: 58px;
+}
+.s1 {
+  padding-top: 2px;
+  padding-bottom: 3%;
+}
+.s2 {
+  padding-bottom: 3%;
+}
+.s2,
+.s3 {
+  padding: 0 auto;
+}
+.s3 {
+  padding-bottom: 3px;
+}
