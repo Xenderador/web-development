@@ -8,4 +8,3 @@ Web development refers to the creating, building, and maintaining of websites. I
 ### Backend
 ![image](https://github.com/Xenderador/web-development/assets/68114908/fb6c4a27-270d-4c64-9844-f562b08ccfc2)
 ###
-***[html and css](https://github.com/Xenderador/web-development/tree/main/html)***
